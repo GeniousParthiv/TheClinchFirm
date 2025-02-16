@@ -3,73 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Clinch Firm</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.0/tailwind.min.css" rel="stylesheet">
+    <title>The Clinch Firm - Real Estate & Financial Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="text-white">
+
     <!-- Header -->
-    <header class="bg-blue-600 text-white py-6 text-center">
+    <header class="bg-black bg-opacity-70 p-6 text-center">
         <h1 class="text-4xl font-bold">The Clinch Firm</h1>
-        <p class="mt-2">Your Trusted Connection to Real Estate, Mortgage & Financial Experts</p>
+        <p class="text-lg mt-2">Real Estate | Mortgage | Financial Advice</p>
     </header>
 
     <!-- Services Section -->
-    <section class="max-w-6xl mx-auto my-10 p-6">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Our Services</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">Real Estate Services</h3>
-                <p>Buying, selling, or investing? Our experts provide guidance every step of the way.</p>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">Mortgage Assistance</h3>
-                <p>We connect you with professionals who simplify mortgages with clarity and ease.</p>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">Financial Advisory</h3>
-                <p>Our financial experts help you plan and secure your financial future.</p>
+    <div class="flex flex-wrap gap-6 justify-center mt-6">
+        <!-- Image 1: Modern Suburban Home -->
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-80">
+            <img src="images/modern-home.jpg" alt="Modern Suburban Home" class="w-full">
+            <div class="p-4 text-gray-800">
+                <h3 class="text-xl font-semibold">Modern Suburban Home</h3>
+                <p class="text-sm">Stylish and inviting modern homes for sale.</p>
             </div>
         </div>
-    </section>
+
+        <!-- Image 2: Financial Advisor Consulting Clients -->
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-80">
+            <img src="images/financial-advisor.jpg" alt="Financial Advisor Consulting" class="w-full">
+            <div class="p-4 text-gray-800">
+                <h3 class="text-xl font-semibold">Financial Advisor Consulting</h3>
+                <p class="text-sm">Expert guidance for financial growth.</p>
+            </div>
+        </div>
+
+        <!-- Image 3: House Keys with Keychain -->
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-80">
+            <img src="images/house-keys.jpg" alt="House Keys" class="w-full">
+            <div class="p-4 text-gray-800">
+                <h3 class="text-xl font-semibold">House Keys</h3>
+                <p class="text-sm">Keys to your dream home.</p>
+            </div>
+        </div>
+
+        <!-- Image 4: Business Meeting with Financial Charts -->
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-80">
+            <img src="images/business-meeting.jpg" alt="Business Meeting" class="w-full">
+            <div class="p-4 text-gray-800">
+                <h3 class="text-xl font-semibold">Business Meeting</h3>
+                <p class="text-sm">Insightful financial planning sessions.</p>
+            </div>
+        </div>
+
+        <!-- Image 5: Luxury Home Exterior at Dusk -->
+        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-80">
+            <img src="images/luxury-home.jpg" alt="Luxury Home" class="w-full">
+            <div class="p-4 text-gray-800">
+                <h3 class="text-xl font-semibold">Luxury Home</h3>
+                <p class="text-sm">Elegant homes with scenic views.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Inquiry Form -->
-    <section class="max-w-lg mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 class="text-2xl font-bold mb-4 text-center">Submit Your Inquiry</h2>
-        <form id="inquiryForm" class="flex flex-col gap-4" action="https://formspree.io/f/manqpvdp" method="POST">
-            <input type="text" name="name" placeholder="Full Name" class="border p-2 rounded" required>
-            <input type="email" name="email" placeholder="Email Address" class="border p-2 rounded" required>
-            <input type="tel" name="phone" placeholder="Phone Number" class="border p-2 rounded" required>
-            <select name="service" class="border p-2 rounded" required>
-                <option value="">Select a Service</option>
-                <option value="Real Estate">Real Estate Services</option>
-                <option value="Mortgage">Mortgage Assistance</option>
-                <option value="Financial Advisory">Financial Advisory</option>
-            </select>
-            <textarea name="message" placeholder="Your Message (optional)" class="border p-2 rounded"></textarea>
-            <button type="submit" class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Submit Inquiry</button>
+    <div class="max-w-lg mx-auto mt-10 bg-black bg-opacity-70 p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST" class="space-y-4">
+            <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded text-gray-800">
+            <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded text-gray-800">
+            <textarea name="message" placeholder="Your Message" required class="w-full p-2 rounded text-gray-800"></textarea>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Inquiry</button>
         </form>
-    </section>
-
-    <!-- About Us -->
-    <section class="max-w-4xl mx-auto my-10 p-6">
-        <h2 class="text-3xl font-semibold mb-4 text-center">About The Clinch Firm</h2>
-        <p class="text-center">At The Clinch Firm, we simplify the process of finding reliable experts in real estate, mortgage, and financial planning. We partner with trusted professionals to provide you with expert guidance tailored to your needs.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="max-w-lg mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 class="text-2xl font-bold mb-4 text-center">Contact Us</h2>
-        <form class="flex flex-col gap-4">
-            <input type="text" placeholder="Your Name" class="border p-2 rounded" required>
-            <input type="email" placeholder="Your Email" class="border p-2 rounded" required>
-            <textarea placeholder="Your Message" class="border p-2 rounded" required></textarea>
-            <button type="submit" class="bg-green-600 text-white py-2 rounded hover:bg-green-700">Send Message</button>
-        </form>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-4 text-center">
-        &copy; 2025 The Clinch Firm. All rights reserved.
+    <footer class="mt-10 p-4 text-center bg-black bg-opacity-70">
+        <p class="text-sm">&copy; 2025 The Clinch Firm. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
     </footer>
 </body>
 </html>
